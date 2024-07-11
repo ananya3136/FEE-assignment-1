@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booktok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            background: url('"C:\Users\Ananya sharma\Downloads\background.avif"') no-repeat center center fixed; 
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .header img {
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+        }
+        .nav {
+            text-align: right;
+            padding: 10px;
+            background-color: #333;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .book {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: beige;
+            display: flex;
+            align-items: center; 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="C:\Users\Ananya sharma\Downloads\book.png" alt="Logo" width="50" height="50">
+        <h1>BookTok</h1>
+    </div>
+
+    <div class="nav">
+        <a href="#" id="signin">Sign In</a>
+        <a href="#" id="signout" style="display:none;">Sign Out</a>
+    </div>
+
+    <div class="container">
+        <h2>Reviews</h2>
+        <div class="book">
+            <img src="C:\Users\Ananya sharma\Downloads\pride and prejudice.jpg" alt="The Pride and Prejudice" width="100" height="150">
+            <h3>The Pride and Prejudice</h3>
+            <p> What this novel lacks in some areas, it overcompensates for with the sheer profoundness and wit that it is written with. Despite not catering to my personal preferences, I still consider this book a most splendid literary achievement and undoubtedly a work that every man and woman must read at least once in their lifetime.</p>
+        </div>
+        <div class="book">
+            <h3>To Kill a Mockingbird</h3>
+            <img src="C:\Users\Ananya sharma\Downloads\to kill a mockingbird.jpg" alt="To Kill a Mockingbird" width="100" height="150">
+            <p>To Kill a Mockingbird by Harper Lee has a strong sense of morality at the center of its story. The characters are well-written and slightly unconventional. The hero of the story is Atticus Finch; he is not a hero in a traditional sense due to his physical traits, but he is a hero because of his values. I am glad I re-read this book. I realized how many things had gone completely over my head the last time. The beginning was a little slow with all the descriptions that turned out to be necessary for the setting of the story. Overall, the book maintains a good pace. It is a great book. It did get too much during some parts, and I had to put it away for a while. This is a book everyone should read.</p>
+        </div>
+        <div class="book">
+            <img src="C:\Users\Ananya sharma\Downloads\don quixote.jpg" alt="Don Quoxite" width="100" height="150">
+            <h3>Don Quoxite</h3>
+            <p>I was surprised how funny it was.  Like laugh-out-loud funny with crude potty humor (my favorite) and violence that the Three Stooges would love.  For example, Don Quixote does something absolutely crazy until I can’t stand him but then he gets the crap beaten out of him so I felt sorry for him and kind of liked him again until, of course, he does something crazy again.  It actually takes a while to get tired of that cycle because it manages to be funny every time.  By the time I was tired of it, Don Quixote started to change and develop more.  The story is tragic, too, so it has some depth (but even the tragedy manages to be kind of funny).</p>
+        </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('signin').addEventListener('click', function() {
+            document.getElementById('signin').style.display = 'none';
+            document.getElementById('signout').style.display = 'inline';
+        });
+
+        document.getElementById('signout').addEventListener('click', function() {
+            document.getElementById('signin').style.display = 'inline';
+            document.getElementById('signout').style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
